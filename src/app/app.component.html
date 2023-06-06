@@ -1,0 +1,9 @@
+<section class="content">
+  <div class="container" *ngIf="(randomIcon$ | async) as icon">
+    <h1>Font Awesome Icons</h1>
+    <div class="image">
+      <fa-icon [icon]="icon" class="icon"></fa-icon>
+    </div>
+    <button class="button" (click)="changeIcon()">Show icon</button>
+  </div>
+</section>
